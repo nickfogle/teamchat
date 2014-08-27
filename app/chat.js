@@ -100,7 +100,7 @@ var ChatServer = function (config, server, sessionStore) {
             });
 
             //
-            // Who is me bro
+            // Get User Name
             //
             client.on('user:whoami', function() {
                 client.get('profile', function(err, profile) {

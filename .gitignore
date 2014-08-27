@@ -6,3 +6,14 @@ node_modules
 *.pem
 *.crt
 *.csr
+letschatbro.0
+letschatbro.ns
+local.0
+local.ns
+mongod.lock
+settings.js.sample
+.gitignore
+.jshintrc
+LICENSE
+Makefile
+Readme.md

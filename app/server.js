@@ -47,8 +47,8 @@ var Server = function(config) {
     self.mongoURL = self.config.db_url || 'mongodb://'
         + self.config.db_user
         + ':' + self.config.db_password
-        + '@' + self.config.db_host 
-        + ':' + self.config.db_port 
+        + '@' + self.config.db_host
+        + ':' + self.config.db_port
         + '/' + self.config.db_name;
 
     // Create express app
@@ -71,7 +71,7 @@ var Server = function(config) {
             key: 'express.sid',
             cookie: {
                 httpOnly: false // We have to turn off httpOnly for websockets
-            }, 
+            },
             secret: self.config.cookie_secret,
             store: self.sessionStore
         }));
@@ -124,7 +124,7 @@ var Server = function(config) {
     });
     passport.deserializeUser(function(id, done) {
         models.user.findOne({
-            _id: id 
+            _id: id
         }).exec(function(err, user) {
             done(err, user);
         });
@@ -399,7 +399,7 @@ var Server = function(config) {
                     });
                     return;
                 }
-                
+
                 // Lets see if this room exists
                 models.room.findOne({
                     '_id': roomID
@@ -481,9 +481,9 @@ var Server = function(config) {
                                 status: 'success',
                                 message: savedFile.name + ' has been saved!',
                                 url: url
-                            }); 
+                            });
                         });
-                    });  
+                    });
 
                 });
             });
