@@ -5169,7 +5169,7 @@ textarea {
   outline: none;
 }
 header {
-  background: #222222 url('../img/header.png');
+  background: #222222;
   border-bottom: 1px #000 solid;
   height: 42px;
   -webkit-box-sizing: content-box;
@@ -5201,7 +5201,7 @@ header:after {
   clear: both;
 }
 header .user {
-  background: #222222 url('../img/header.png');
+  background: #222222;
   max-width: 25%;
   height: 42px;
   line-height: 42px;
