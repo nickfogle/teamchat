@@ -4999,7 +4999,7 @@ a .icon-flip-vertical:before {
  * Mixins
  *********************/
 .bg-dark {
-  background: #222222 url('../img/dark_noise.png');
+  background: #E5E9EC;
 }
 .horizontal-box {
   display: box;
@@ -5159,7 +5159,7 @@ html {
   height: 100%;
 }
 body {
-  background: #222222;
+  background: #E5E9EC;
 }
 body,
 li {
@@ -5201,7 +5201,7 @@ header:after {
   clear: both;
 }
 header .user {
-  background: #222222;
+  background: #E5E9EC;
   max-width: 25%;
   height: 42px;
   line-height: 42px;
@@ -5361,7 +5361,7 @@ header .user .dropdown-menu a:hover {
   margin-top: 12px;
 }
 .page-login .footer {
-  background: #222222 url('../img/dark_noise.png');
+  background: #222222;
   width: 100%;
   color: #fff;
   font-size: 11px;
@@ -5587,7 +5587,7 @@ header .user .dropdown-menu a:hover {
   right: 8px;
 }
 .tabs .selected {
-  background: #222222 url('../img/dark_noise.png');
+  background: #222222;
   position: relative;
   z-index: 999;
   padding-bottom: 2px;
