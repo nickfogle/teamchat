@@ -5169,7 +5169,7 @@ textarea {
   outline: none;
 }
 header {
-  background: #222222;
+  background: #fff;
   border-bottom: 1px #000 solid;
   height: 42px;
   -webkit-box-sizing: content-box;
@@ -5540,7 +5540,7 @@ header .user .dropdown-menu a:hover {
   text-align: center;
 }
 .tabs .tab a {
-  background: #222222 url('../img/dark_noise.png');
+  background: #222222;
   height: 30px;
   line-height: 30px;
   color: #fff;
@@ -5553,8 +5553,8 @@ header .user .dropdown-menu a:hover {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
+  opacity: 0.8;
+  filter: alpha(opacity=80);
 }
 .tabs .tab a:hover {
   text-decoration: none;
