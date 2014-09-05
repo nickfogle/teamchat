@@ -5170,7 +5170,7 @@ textarea {
 }
 header {
   background: #fff;
-  border-bottom: 1px #000 solid;
+  border-bottom: 1px #E5E9EC solid;
   height: 42px;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
@@ -5201,7 +5201,7 @@ header:after {
   clear: both;
 }
 header .user {
-  background: #E5E9EC;
+  background: #222222;
   max-width: 25%;
   height: 42px;
   line-height: 42px;
@@ -5970,7 +5970,7 @@ header .user .dropdown-menu a:hover {
 }
 #room-list h1 {
   font-size: 30px;
-  color: #f2f2f2;
+  color: #fff;
   vertical-align: middle;
   margin: 0;
   display: inline-block;
@@ -5983,8 +5983,8 @@ header .user .dropdown-menu a:hover {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-shadow: 0 0 7px #000000;
-  box-shadow: 0 0 7px #000000;
+  -webkit-box-shadow: 0 0 3px #000000;
+  box-shadow: 0 0 3px #000000;
 }
 #room-list .top img {
   height: 20px;
@@ -6003,7 +6003,7 @@ header .user .dropdown-menu a:hover {
   margin: 0;
 }
 .room-list .room {
-  background: #222;
+  background: #0AA699;
   width: 300px;
   padding: 10px;
   padding-bottom: 30px;
@@ -6016,8 +6016,8 @@ header .user .dropdown-menu a:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-box-shadow: 0 0 7px #000000;
-  box-shadow: 0 0 7px #000000;
+  -webkit-box-shadow: 0 0 3px #000000;
+  box-shadow: 0 0 3px #000000;
 }
 .room-list .name {
   font-size: 20px;
@@ -6030,7 +6030,7 @@ header .user .dropdown-menu a:hover {
 }
 .room-list .description {
   line-height: 150%;
-  color: #777;
+  color: #1b1e24;
   word-wrap: break-word;
 }
 .room-list .users {
