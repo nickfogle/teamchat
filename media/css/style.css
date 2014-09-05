@@ -5983,8 +5983,8 @@ header .user .dropdown-menu a:hover {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  -webkit-box-shadow: 0 0 3px #000000;
-  box-shadow: 0 0 3px #000000;
+  -webkit-box-shadow: 0 0 3px #1B1E24;
+  box-shadow: 0 0 3px #1B1E24;
 }
 #room-list .top img {
   height: 20px;
@@ -6016,8 +6016,8 @@ header .user .dropdown-menu a:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-box-shadow: 0 0 3px #000000;
-  box-shadow: 0 0 3px #000000;
+  -webkit-box-shadow: 0 0 3px #1B1E24;
+  box-shadow: 0 0 3px #1B1E24;
 }
 .room-list .name {
   font-size: 20px;
@@ -6030,7 +6030,7 @@ header .user .dropdown-menu a:hover {
 }
 .room-list .description {
   line-height: 150%;
-  color: #1b1e24;
+  color: #505458;
   word-wrap: break-word;
 }
 .room-list .users {
