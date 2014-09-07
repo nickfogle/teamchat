@@ -2018,7 +2018,7 @@ input[type="button"].btn-block {
 .dropdown-menu > li > a:focus {
   text-decoration: none;
   color: #ffffff;
-  background-color: #0088cc;
+  background-color: #22262E;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -5209,11 +5209,12 @@ header .user {
   position: relative;
 }
 header .user:active {
-  background: #222;
+  background: #22262E;
+  color: #fff;
 }
 header .user .caret {
-  border-top-color: #fff;
-  border-bottom-color: #fff;
+  border-top-color: #1b1e24;
+  border-bottom-color: #1b1e24;
   margin: 0;
   margin-top: -2px;
   vertical-align: middle;
@@ -5237,10 +5238,10 @@ header .user .button:hover {
   text-decoration: none;
 }
 header .user .button:hover .name {
-  color: #fff;
+  color: #505458;
 }
 header .user .button .name {
-  color: #fff;
+  color: #1b1e24;
 }
 header .user img {
   width: 32px;
@@ -5278,10 +5279,10 @@ header .user .dropdown-menu:after {
 }
 header .user .dropdown-menu,
 header .user .dropdown-menu a {
-  color: #333;
+  color: #1b1e24;
 }
 header .user .dropdown-menu a:hover {
-  color: #fff;
+  color: #ffffff;
 }
 .avatar {
   border-radius: 100%;
