@@ -5201,7 +5201,7 @@ header:after {
   clear: both;
 }
 header .user {
-  background: #1B1E24;
+  background: #ffffff;
   max-width: 25%;
   height: 43px;
   line-height: 42px;
@@ -5240,7 +5240,7 @@ header .user .button:hover .name {
   color: #fff;
 }
 header .user .button .name {
-  color: #bbb;
+  color: #fff;
 }
 header .user img {
   width: 32px;
