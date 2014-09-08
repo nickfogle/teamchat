@@ -79,7 +79,7 @@ var ChatServer = function (config, server, sessionStore) {
 
             if (!userData) {
                 //
-                // Sessions be messin' up bro
+                // Error in User Session
                 //
                 return;
             }
@@ -213,15 +213,15 @@ var ChatServer = function (config, server, sessionStore) {
             client.on('room:join', function(id, fn) {
                 models.room.findById(id, function(err, room) {
                     if (err) {
-                        // Oh shit
+                        // Error
                         return;
                     }
                     if (!room) {
-                        // No room bro
+                        // No Vacancy
                         return;
                     }
                     client.join(id);
-                    // Send back Room meta to client
+                    // Return Room Meta to Client
                     if (fn) {
                         fn({
                             id: room._id,
@@ -257,7 +257,7 @@ var ChatServer = function (config, server, sessionStore) {
                 _.each(self.io.sockets.clients(query.room), function(user) {
                     user.get('profile', function(err, profile) {
                         if (err) {
-                            // What the what
+                            // ADD ERROR HANDLING
                             return;
                         }
                         client.emit('room:users:new', {
