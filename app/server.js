@@ -296,7 +296,7 @@ var Server = function(config) {
                     });
                     return;
                 }
-                // Only grab the fields we need
+                // Only use the fields we need
                 _.each({
                     displayName: form['display-name'],
                     firstName: form['first-name'],
@@ -318,7 +318,7 @@ var Server = function(config) {
                     }
                     // Let the socket clients know
                     self.chatServer.updateUser(user);
-                    // Aww yea
+
                     res.send({
                         status: 'success',
                         message: 'Your profile has been saved.'
@@ -341,7 +341,7 @@ var Server = function(config) {
                     });
                     return;
                 }
-                // Is the password good?
+                // Is the password valid?
                 if (hash.sha256(form.password, self.config.password_salt) !== user.password) {
                     res.send({
                         status: 'error',
@@ -349,11 +349,11 @@ var Server = function(config) {
                     });
                     return;
                 }
-                // Do we have a new email?
+                // Is there a new email?
                 if (form.email.length > 0) {
                     user.email = form.email;
                 }
-                // How about a new password?
+                // Is there a new password?
                 if (form['new-password'].length > 0) {
                     user.password = form['new-password'];
                 }
@@ -374,8 +374,7 @@ var Server = function(config) {
             });
         });
         //
-        // File uploadin'
-        // TODO: Some proper error handling
+        // File uploading
         self.app.post('/upload-file', requireLogin, function(req, res) {
             var moveUpload = function(path, newPath, callback) {
                 fs.readFile(path, function(err, data) {
@@ -400,7 +399,7 @@ var Server = function(config) {
                     return;
                 }
 
-                // Lets see if this room exists
+                // Checks if room exists
                 models.room.findOne({
                     '_id': roomID
                 }).exec(function(err, room) {
@@ -533,7 +532,7 @@ var Server = function(config) {
         models.room.findById(req.params.room, function(err, room) {
             if (err || !room) {
                 // Error
-                res.send(500, 'Something went wrong trying to lookup the room');
+                res.send(500, 'Oops! Something went wrong looking up that room.');
                 return;
             }
             // Lookup messages
