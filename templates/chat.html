@@ -20,7 +20,7 @@
     <script type="text/javascript">
         $(function() {
             window.app = new Client({
-                title: 'Team Chat',
+                title: 'Law Chat',
                 host: '{{host}}',
                 port: {{port}},
                 transports: ['websocket', 'flashsocket']
@@ -33,7 +33,10 @@
 
 {% block content %}
 <div id="client">
+
+
     <header class="navbar">
+
         <div id="rooms-menu" class="tabs">
             <ul>
                 <li class="fixed tab" data-id="home">
@@ -41,6 +44,7 @@
                 </li>
             </ul>
         </div>
+
         <div class="user dropdown pull-right">
             <span class="button" data-toggle="dropdown" href="#">
                 <img class="avatar" src="https://www.gravatar.com/avatar/{{ user_avatar }}?s=50" />
@@ -55,7 +59,10 @@
                 <li><a href="/logout"><i class="icon-signout"></i> Logout</a></li>
             </ul>
         </div>
+
     </header>
+
+
     <div id="panes" class="views">
         <div id="room-list" data-id="home" class="view" style="display: none;">
             <div class="top">

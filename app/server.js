@@ -1,5 +1,5 @@
 //
-// Let's Chat Frontend
+// Law Chat Frontend
 //
 
 var _ = require('underscore');
