@@ -293,7 +293,7 @@ var ChatServer = function (config, server, sessionStore) {
                                 id: file._id,
                                 name: file.name,
                                 type: file.type,
-                                size: Math.floor(file.size / 1024),
+                                size: Math.floor(file.size / 2048),
                                 uploaded: file.uploaded,
                                 owner: file.owner.displayName,
                                 room: file.room
