@@ -496,7 +496,7 @@ var Server = function(config) {
         models.file.findById(req.params.id, function(err, file) {
             if (err) {
                 // Error
-                res.send(500, 'Something went terribly wrong');
+                res.send(500, 'Oops! Something went terribly wrong...');
                 return;
             }
             res.contentType(file.type);
