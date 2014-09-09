@@ -7,3 +7,5 @@ var Server = require('./app/server.js');
 var app = new Server(config);
 
 app.start();
+
+console.log("listening on port 500...");

@@ -234,7 +234,7 @@ var Server = function(config) {
                 // Registration is not enabled bro
                 res.send(403, {
                     status: 'error',
-                    message: 'Registration is disabled.'
+                    message: 'Registration is currently disabled.'
                 });
                 return;
             }
