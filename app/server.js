@@ -532,7 +532,7 @@ var Server = function(config) {
         models.room.findById(req.params.room, function(err, room) {
             if (err || !room) {
                 // Error
-                res.send(500, 'Oops! Something went wrong looking up that room.');
+                res.send(500, 'Oops! Something went wrong... looking up that room.');
                 return;
             }
             // Lookup messages
