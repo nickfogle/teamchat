@@ -1,13 +1,12 @@
 # **Team Chat Application**
 
-A self-hosted chat app for small teams.
+A self-hosted chat app with multiple rooms for communicating between team members.
 
 ## Features and Stuff
 
 * Persistent messages
 * Multiple rooms
 * New message alerts
-* Mentions (hey @you)
 * Image embeds
 * File uploads
 
@@ -60,7 +59,7 @@ s3.bucket
 
 Note that you must use s3 (or hack in a different solution) to allow file uploads with lets-chat on heroku, as the filesystem is not persisted across heroku deploys.
 
-Finally, be sure to enable heroku's websockets support, otherwise socket.io will fall back to XHR polling and run super slowly.
+Last, be sure to enable heroku's websockets support, otherwise socket.io will fall back to XHR polling (slower).
 
 ```
 heroku labs:enable websockets -a heroku-app-name
