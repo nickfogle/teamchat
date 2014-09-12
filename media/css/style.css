@@ -5342,6 +5342,7 @@ header .user .dropdown-menu a:hover {
 .page-login .well {
   background: #fff;
   margin: 0 auto;
+  opacity: 0.9;
   -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.1);
 }
